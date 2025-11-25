@@ -89,7 +89,7 @@ class VenueCard extends StatelessWidget {
                   Row(
                     children: [
                       const Icon(
-                        LucideIcons.mapPin,
+                        LucideIcons.map_pin,
                         size: 14,
                         color: AppColors.textGrey,
                       ),

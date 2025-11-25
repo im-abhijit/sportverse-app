@@ -121,7 +121,7 @@ class IndexScreen extends StatelessWidget {
                     
                     // Venue Owner Button
                     _RoleButton(
-                      icon: LucideIcons.building2,
+                      icon: LucideIcons.building_2,
                       title: "I'm a Venue Owner",
                       subtitle: "Manage your sports venues",
                       onTap: () => context.push('/auth/owner-login'),

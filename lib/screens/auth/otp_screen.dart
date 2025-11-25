@@ -97,8 +97,8 @@ class _OtpScreenState extends State<OtpScreen> {
                         color: Colors.white.withOpacity(0.2),
                         shape: BoxShape.circle,
                       ),
-                      child: const Icon(
-                        LucideIcons.arrowLeft,
+                      child: Icon(
+                        LucideIcons.arrow_left,
                         color: Colors.white,
                         size: 20,
                       ),

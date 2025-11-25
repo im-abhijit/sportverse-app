@@ -60,7 +60,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
                   ),
                 ),
                 Icon(
-                  LucideIcons.chevronDown,
+                  LucideIcons.chevron_down,
                   size: 16,
                   color: Colors.white.withOpacity(0.7),
                 ),

@@ -120,7 +120,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                   selected: _selectedCity,
                                   onSelect: _handleCitySelect,
                                   placeholder: 'Select City',
-                                  icon: LucideIcons.mapPin,
+                                  icon: LucideIcons.map_pin,
                                 ),
                               ),
                               const SizedBox(width: 10),
@@ -173,7 +173,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
               ),
               
               // Content
-              if (!_selectedCity)
+              if (_selectedCity == null || _selectedCity!.isEmpty)
                 SliverFillRemaining(
                   hasScrollBody: false,
                   child: _buildEmptyState(),
@@ -263,8 +263,8 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(
-              LucideIcons.mapPin,
+            Icon(
+              LucideIcons.map_pin,
               size: 48,
               color: AppColors.primaryBlue,
             ),
@@ -319,8 +319,8 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
-            LucideIcons.mapPin,
+          Icon(
+            LucideIcons.map_pin,
             size: 48,
             color: AppColors.textLightGrey,
           ),
